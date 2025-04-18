@@ -21,6 +21,12 @@
     <label for="context">Context:</label>
     <input type="text" id="context" placeholder="Enter key points or situation" required><br>
 
+    <label for="date">Date:</label>
+    <input type="date" id="date" required><br>
+
+    <label for="additional">Additional:</label>
+    <input type="text" id="additional" placeholder="Enter any additional information"><br>
+
     <label for="lettertype">Type:</label>
     <select id="lettertype" name="lettertype" required>
         <option value="Formal">Formal</option>
@@ -37,9 +43,9 @@
         <option value="Sympathy">Sympathy</option>
         <option value="Congratulation">Congratulation</option>
         <option value="Love">Love</option>
-    </select><br><br>
+    </select><br>
 
-    <button id="genbutton" onclick="genletter()">Generate Letter</button>
+    <button id="genbutton" onclick="genletter()">Generate Letter</button><br>
 
     <div id="letter">
         <h2>Generated Letter</h2>

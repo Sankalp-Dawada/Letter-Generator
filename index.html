@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Letter Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+
     <h1>Letter Generator</h1>
+
     <label for="To">To</label>
     <input type="text" id="To" placeholder="Enter name" required><br><br>
+
     <label for="From">From</label>
     <input type="text" id="From" placeholder="Enter name" required><br><br>
+
     <label for="Subject">Subject</label>
     <input type="text" id="Subject" placeholder="Enter subject" required><br><br>
+
     <label for="Type">Type of Letter</label>
     <select id="Type" name="Type" required>
         <option value="Formal">Formal</option>
@@ -29,6 +41,16 @@
         <option value="Sympathy">Sympathy</option>
         <option value="Congratulation">Congratulation</option>
         <option value="Love">Love</option>
-    <!-- <label for=""></label> -->
+
+        <button onclick="genletter()">Genrate Letter</button>
+
+        <div id="letter" style="display:none;">
+            <h2>Generated Letter</h2>
+            <p id="letterContent"></p>
+        </div>
+
+        <script type="module" src="script.js"></script>
+
 </body>
+
 </html>

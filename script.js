@@ -82,3 +82,13 @@ window.genletter = async function () {
         genbutton.disabled = false;
     }
 }
+
+window.copyletter = function (){
+    const lettercontent = document.getElementById("lettercontent").innerText;
+    navigator.clipboard.writeText(lettercontent).then(() => {
+        alert("Letter copied to clipboard!");
+    }).catch(err => {
+        console.error("Error copying letter:", err);
+        alert("Failed to copy letter to clipboard.");
+    });
+}
